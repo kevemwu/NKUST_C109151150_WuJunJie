@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nkust1111111111ooo_midterm/main.dart';
-import 'package:video_player/video_player.dart';
 
 class screen3 extends StatefulWidget {
   const screen3({Key? key}) : super(key: key);
