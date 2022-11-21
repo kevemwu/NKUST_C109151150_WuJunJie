@@ -27,7 +27,7 @@ class screen2 extends StatelessWidget {
       child: Column(
         children:<Widget>[
           Padding(padding: EdgeInsets.fromLTRB(20, 30, 20, 20),
-            child: Text("Who am I",
+            child: Text("About Me",
                 style: TextStyle(fontSize:24,
                   fontWeight:FontWeight.bold,)),
           ),
