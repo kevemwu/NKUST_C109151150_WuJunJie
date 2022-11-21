@@ -40,7 +40,7 @@ class screen3 extends StatelessWidget {
                 ),
                 Container(
                   color: Colors.red,
-                  child: Text('班級英語歌唱比賽第四名',
+                  child: Text('班際英語歌唱比賽第四名',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
