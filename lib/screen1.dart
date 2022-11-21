@@ -25,7 +25,7 @@ class screen1 extends StatelessWidget {
                         boxShadow: [ BoxShadow(color: Colors.amberAccent,
                                                offset: Offset(6, 6)),
                         ],),
-            child:Text("吳俊傑 ",
+            child:Text("吳俊傑",
               style: TextStyle(fontSize: 20),),
           ),
 
