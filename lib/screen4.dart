@@ -172,7 +172,7 @@ class screen4 extends StatelessWidget {
                 ),
                 Container(
                   color: Colors.red,
-                  child: Text('可從資料庫讀取問卷做填寫',
+                  child: Text('可從資料庫讀取問卷填寫',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
