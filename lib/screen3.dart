@@ -1,46 +1,94 @@
 import 'package:flutter/material.dart';
-import 'package:nkust1111111111ooo_midterm/main.dart';
 
-class screen3 extends StatefulWidget {
-  const screen3({Key? key}) : super(key: key);
-
-  @override
-  _screen3State createState() => _screen3State();
-}
-
-
-class _screen3State extends State<MyApp> {
-  late VideoPlayerController _videoPlayerController;
-
-  @override
-  void initState() {
-    _videoPlayerController = VideoPlayerController.network(
-        'https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4');
-    _videoPlayerController.initialize().then((_) {
-      setState() {}
-    });
-  }
-
+class screen3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child:
-          Scaffold(
-            body: _videoPlayerController.value.isInitialized
-                ? AspectRatio(
-                aspectRatio: _videoPlayerController.value.aspectRatio,
-                child: VideoPlayer(_videoPlayerController))
-                : Container(),
-            floatingActionButton: FloatingActionButton(
-              child: Icon(Icons.play_arrow),
-              onPressed: () {
-                setState(() {
-                  _videoPlayerController.play();
-                });
-              },
+    return SafeArea(
+      child: Column(
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  color: Colors.amber,
+                  child: Icon(Icons.arrow_right),
+                ),
+                Container(
+                  color: Colors.red,
+                  child: Text('班級孝親楷模',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      )),
+                ),
+              ],
             ),
-          )
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  color: Colors.amber,
+                  child: Icon(Icons.arrow_right),
+                ),
+                Container(
+                  color: Colors.red,
+                  child: Text('班級英語歌唱比賽第四名',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      )),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  color: Colors.amber,
+                  child: Icon(Icons.arrow_right),
+                ),
+                Container(
+                  color: Colors.red,
+                  child: Text('畢聯會成員',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      )),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  color: Colors.amber,
+                  child: Icon(Icons.arrow_right),
+                ),
+                Container(
+                  color: Colors.red,
+                  child: Text('學生會成員',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      )),
+                ),
+              ],
+            ),
+          ]),
     );
   }
 }
-
